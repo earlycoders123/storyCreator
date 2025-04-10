@@ -18,8 +18,7 @@ theme = st.selectbox("Choose a story theme:", themes)
 
 if st.button("🎨 Create Storybook Cover"):
     title = f"The {mood} {character} of the {theme}"
-    st.subheader(f"📘 Storybook Title:
-**{title}**")
+    st.subheader("📘 Storybook Title: " + title)
 
     # Generate a mock book cover image
     img = Image.new("RGB", (600, 800), color="white")
